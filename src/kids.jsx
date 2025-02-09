@@ -1,23 +1,15 @@
 import React from 'react';
 
-const Women = () => {
+const Kids = () => {
     return (
         <>
-            <div className='women-container' style={{
+            <div className='kids-container' style={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'flex-start',
+                justifyContent: 'space-between',
                 alignItems: 'center',
                 padding: '0 100px',
-                gap: '100px'
             }}>
-                <img style={{
-                    width:'40%', 
-                    height:'25%', 
-                    borderRadius:'10px',
-                    marginTop:'70px'
-                }} src="/women.jpg" alt="Women's Collection"/>
-                
                 <div style={{
                     marginTop:'70px',
                     flex: 1,
@@ -36,11 +28,19 @@ const Women = () => {
                             padding: '10px 20px',
                             cursor: 'pointer',
                             marginTop: '10px'
-                        }}>Women</button>
+                        }}>Kids</button>
                     </div>
                 </div>
+                
+                <img style={{
+                    width:'40%', 
+                    height:'25%', 
+                    borderRadius:'10px',
+                    marginTop:'70px'
+                }} src="/kid.jpg" alt="Kids Collection"/>
             </div>
         </>
     )
 }
-export default Women;
+
+export default Kids;
