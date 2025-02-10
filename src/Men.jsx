@@ -1,6 +1,9 @@
 import React from 'react';
 
+import {useNavigate} from 'react-router-dom';
+
 const Men = () => {
+const navigate=useNavigate();
     return (
         <>
             <div className='men-container' style={{
@@ -22,7 +25,9 @@ const Men = () => {
                             margin: '10px 0',
                             fontSize: '1.2rem'
                         }}>Don't miss out</p>
-                        <button style={{
+                        <button 
+                        onClick={()=>navigate('/men')}
+                        style={{
                             border: '2px solid black',
                             background: 'none',
                             padding: '10px 20px',
