@@ -1,6 +1,7 @@
 import React from 'react';
-
+import {useNavigate} from 'react-router-dom';
 const Women = () => {
+    const navigate=useNavigate();
     return (
         <>
             <div className='women-container' style={{
@@ -30,7 +31,10 @@ const Women = () => {
                             margin: '10px 0',
                             fontSize: '1.2rem'
                         }}>Don't miss out</p>
-                        <button style={{
+                        <button 
+                        onClick={()=>navigate('/women')}
+                        
+                        style={{
                             border: '2px solid black',
                             background: 'none',
                             padding: '10px 20px',

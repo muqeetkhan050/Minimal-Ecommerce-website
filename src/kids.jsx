@@ -1,6 +1,10 @@
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
+
+
 
 const Kids = () => {
+    const navigate=useNavigate();
     return (
         <>
             <div className='kids-container' style={{
@@ -22,7 +26,9 @@ const Kids = () => {
                             margin: '10px 0',
                             fontSize: '1.2rem'
                         }}>Don't miss out</p>
-                        <button style={{
+                        <button 
+                        onClick={()=>navigate('/Kids')}
+                        style={{
                             border: '2px solid black',
                             background: 'none',
                             padding: '10px 20px',

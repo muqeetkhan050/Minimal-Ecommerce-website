@@ -8,6 +8,8 @@ import Men from './Men'
 import Women from './Women'
 import Kids from './kids'
 import MenPage from './MenPage'
+import WomenPage from './WomenPage'
+import KidsPage from './KidsPage'
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
             </>
           }/>
           <Route path="/men" element={<MenPage/>}/>
+          <Route path='/women' element={<WomenPage/>}/>
+          <Route path='/kids' element={<KidsPage/>}/>
         </Routes>
       </BrowserRouter>
     </>
