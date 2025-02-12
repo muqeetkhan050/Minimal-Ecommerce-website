@@ -1,9 +1,13 @@
 import React from 'react';
 
-function KidCard(){
+function KidCard({name, price , image}){
     return(
         <>
-        this is our card for kids clothes 
+        
+        <img src={image} alt={name} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+        <>{name}</>
+        <>${price}</>
+        
 
         </>
     )

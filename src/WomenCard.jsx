@@ -1,9 +1,11 @@
 import React from 'react';
 
-function WomenCard(){
+function WomenCard({name,price, image}){
     return(
         <>
-        this is our women card
+        <img src={image} alt={name} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+        <>{name}</>
+        <>{price}</>
         </>
     )
 }
