@@ -1,13 +1,12 @@
 import React from 'react';
 
-function MenCard(){
+const MenCard=({name,price, image})=>{
     return(
         <>
-        this is our card for men clothes 
-
+        <img src={image} alt={name} style={{ width: "100%", height: "200px", objectFit: "cover" }} />
+        <>{name}</>
+        <>${price}</>
         </>
     )
-
 }
-
-export default MenCard;
+export default MenCard
