@@ -12,7 +12,7 @@ const MenPage=()=>{
     return(
         <div className="container py-5">
        <h1 className="text-center mb-4 fw-bold text-primary">All Clothes</h1>
-       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+       <div className="d-flex flex-wrap justify-content-center gap-4">
         {
             Mproducts.map((product)=>(
                 <div className="col" key={product.id}>
