@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
 
-const Header=()=>{
-    return(
-        <div style={{ width:'100%', margin:'0px',padding:'0px'}}>
-            <div style={{display:'flex', flexDirection:'row', justifyContent:'center' ,margin:'0px', padding:'0px'}}>
+const Header = () => {
+    const { cartCount } = useContext(CartContext);
+    return (
+        <div style={{ width: '100%', margin: '0px', padding: '0px' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', margin: '0px', padding: '0px' }}>
 
 
-                <button className='button-80' >Men</button>
-                <button className='button-80' >Women</button>
-
-
-                <button className='button-80' >Kids</button>
+                <nav className="navbar navbar-light bg-light px-4">
+                    <Link to="/" className="navbar-brand fw-bold">🛍️ MyShop</Link>
+                    <Link to="/cart" className="btn btn-outline-primary">
+                        Cart ({cartCount})
+                    </Link>
+                </nav>
             </div>
         </div>
 

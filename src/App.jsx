@@ -10,6 +10,7 @@ import Kids from './kids'
 import MenPage from './MenPage'
 import WomenPage from './WomenPage'
 import KidsPage from './KidsPage'
+import { CartProvider } from './CartContext';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <>
+    <CartProvider>
       <BrowserRouter>
         <Routes>
 
@@ -34,6 +36,7 @@ function App() {
           <Route path='/kids' element={<KidsPage/>}/>
         </Routes>
       </BrowserRouter>
+      </CartProvider>
     </>
   )
 }
