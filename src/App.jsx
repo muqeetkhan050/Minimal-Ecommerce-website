@@ -11,6 +11,8 @@ import MenPage from './MenPage'
 import WomenPage from './WomenPage'
 import KidsPage from './KidsPage'
 import { CartProvider } from './CartContext';
+import CartPage from './CartPage';
+
 
 function App() {
 
@@ -31,6 +33,7 @@ function App() {
               <Kids />
             </>
           }/>
+          <Route path="/cart" element={<CartPage />} />
           <Route path="/men" element={<MenPage/>}/>
           <Route path='/women' element={<WomenPage/>}/>
           <Route path='/kids' element={<KidsPage/>}/>

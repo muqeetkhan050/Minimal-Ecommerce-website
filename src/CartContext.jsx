@@ -27,4 +27,4 @@ const cartCount=cart.length;
 
 
 
-export default CartContext; 
+export default CartProvider; 
